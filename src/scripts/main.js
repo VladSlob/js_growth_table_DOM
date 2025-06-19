@@ -9,6 +9,9 @@ const appendRowButton = document.querySelector('.append-row');
 const removeColumnButton = document.querySelector('.remove-column');
 const appendColumnButton = document.querySelector('.append-column');
 
+const getTableInfo = () => {
+  const tableRows = tbody.querySelectorAll('tr');
+  const tableColumns = tableRows[0].querySelectorAll('td');
 
   return [tableRows.length, tableColumns.length];
 };
